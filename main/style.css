@@ -23,3 +23,303 @@ color: #fff;
 font-size: 1.5rem;
 margin-right: 1rem;
 }
+/* Container and layout */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.col-lg-8, .col-md-4, .col-lg-3, .col-md-6, .col-lg-4 {
+  padding: 0 15px;
+  position: relative;
+  width: 100%;
+}
+
+/* Utility classes */
+.text-center {
+  text-align: center;
+}
+
+.py-5 {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.mb-5 {
+  margin-bottom: 2rem;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.mt-4 {
+  margin-top: 1.5rem;
+}
+
+.ms-2 {
+  margin-left: 0.5rem;
+}
+
+.g-4 {
+  gap: 1.5rem;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+/* Button styles */
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-outline-light {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+  background-color: transparent;
+}
+
+.btn-outline-primary {
+  color: #007bff;
+  border-color: #007bff;
+  background-color: transparent;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1200/600') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  padding: 100px 0;
+}
+
+.hero-content {
+  padding: 50px 0;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+}
+
+/* Services Section */
+.services-section {
+  background-color: #fff;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.section-header p {
+  font-size: 1.1rem;
+  color: #666;
+}
+
+.service-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.service-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: #007bff;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Why Choose Us Section */
+.why-us-section {
+  background-color: #f8f9fa;
+}
+
+.feature-box {
+  text-align: center;
+  padding: 25px 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+  height: 100%;
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.feature-box h4 {
+  font-size: 1.3rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Projects Gallery Section */
+.projects-section {
+  background-color: #fff;
+}
+
+.project-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.project-info {
+  padding: 15px;
+  background-color: #fff;
+}
+
+.project-info h4 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Testimonials Section */
+.testimonials-section {
+  background-color: #f8f9fa;
+}
+
+.testimonial-card {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.testimonial-content {
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.testimonial-content p {
+  position: relative;
+  padding-left: 25px;
+}
+
+.testimonial-author h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+}
+
+.testimonial-author p {
+  color: #666;
+  margin: 0;
+}
+
+/* CTA Section */
+.cta-section {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/api/placeholder/1200/400') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+}
+
+.cta-content {
+  padding: 50px 0;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Bootstrap Icons */
+.bi {
+  display: inline-block;
+  line-height: 1;
+}
+
+.bi-shield-fill-check, .bi-grid-3x3-gap-fill, .bi-brush-fill, 
+.bi-trophy-fill, .bi-star-fill, .bi-people-fill, .bi-clock-fill {
+  color: #007bff;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .col-md-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-lg-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  
+  .col-lg-4 {
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  
+  .col-lg-8 {
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+}
