@@ -23,7 +23,6 @@ color: #fff;
 font-size: 1.5rem;
 margin-right: 1rem;
 }
-/* Container and layout */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -42,7 +41,6 @@ margin-right: 1rem;
   width: 100%;
 }
 
-/* Utility classes */
 .text-center {
   text-align: center;
 }
@@ -86,7 +84,6 @@ margin-right: 1rem;
   font-weight: 300;
 }
 
-/* Button styles */
 .btn {
   display: inline-block;
   font-weight: 400;
@@ -127,7 +124,6 @@ margin-right: 1rem;
   background-color: transparent;
 }
 
-/* Hero Section */
 .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1200/600') no-repeat center center;
   background-size: cover;
@@ -149,7 +145,6 @@ margin-right: 1rem;
   margin-top: 2rem;
 }
 
-/* Services Section */
 .services-section {
   background-color: #fff;
 }
@@ -186,7 +181,6 @@ margin-right: 1rem;
   margin-bottom: 1rem;
 }
 
-/* Why Choose Us Section */
 .why-us-section {
   background-color: #f8f9fa;
 }
@@ -211,7 +205,6 @@ margin-right: 1rem;
   margin-bottom: 0.8rem;
 }
 
-/* Projects Gallery Section */
 .projects-section {
   background-color: #fff;
 }
@@ -267,7 +260,6 @@ margin-right: 1rem;
   margin: 0;
 }
 
-/* CTA Section */
 .cta-section {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('/api/placeholder/1200/400') no-repeat center center;
   background-size: cover;
@@ -283,7 +275,6 @@ margin-right: 1rem;
   margin-bottom: 1rem;
 }
 
-/* Bootstrap Icons */
 .bi {
   display: inline-block;
   line-height: 1;
@@ -294,7 +285,6 @@ margin-right: 1rem;
   color: #007bff;
 }
 
-/* Responsive adjustments */
 @media (min-width: 768px) {
   .col-md-4 {
     flex: 0 0 33.333333%;
