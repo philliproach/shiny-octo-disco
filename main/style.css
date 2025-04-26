@@ -1,3 +1,4 @@
+/* MAIN STYLE */
 body {
   display: flex;
   flex-direction: column;
@@ -12,12 +13,48 @@ main {
 }
 .footer {
   background-color: 
-#212529;
+  #212529;
   color: #fff;
   padding: 2rem 0;
 }
 .social-icons a {
-  color: #fff;
-  font-size: 1.5rem;
-  margin-right: 1rem;
+color: #fff;
+font-size: 1.5rem;
+margin-right: 1rem;
 } 
+/* 404 ERROR STYLE */
+.error-container {
+min-height: 70vh;
+display: flex;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+.error-content {
+max-width: 600px;
+padding: 40px;
+background-color: #f8f9fa;
+border-radius: 8px;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.error-code {
+font-size: 96px;
+font-weight: bold;
+color: #dc3545;
+margin: 0;
+line-height: 1;
+}
+.back-home {
+display: inline-block;
+margin-top: 20px;
+padding: 10px 20px;
+background-color: #212529;
+color: white;
+text-decoration: none;
+border-radius: 4px;
+transition: background-color 0.3s;
+}
+.back-home:hover {
+background-color: #343a40;
+color: white;
+}
