@@ -45,19 +45,24 @@
       }
     </style>
   <script>
-    const pathPrefix = window.location.origin + (window.location.pathname.split('/')[1] ? '/' + window.location.pathname.split('/')[1] : '');
-
-    const head = document.head;
-
-    const style = document.createElement('link');
-    style.rel = 'stylesheet';
-    style.href = pathPrefix + '/main/style.css';
-    head.appendChild(style);
-
-    const script = document.createElement('script');
-    script.src = pathPrefix + '/main/main.js';
     document.addEventListener('DOMContentLoaded', () => {
-      document.body.appendChild(script);
+      const repoName = window.location.pathname.split('/')[1];
+      const origin = window.location.origin;
+      const basePath = repoName ? `${origin}/${repoName}` : origin;
+
+      const navLinks = document.querySelectorAll('.navbar-nav .nav-link[href]');
+
+      navLinks.forEach(link => {
+        const href = link.getAttribute('href');
+
+        if (!href.startsWith('http')) {
+          if (href === 'index.html') {
+            link.href = basePath + '/index.html';
+          } else {
+            link.href = basePath + '/' + href;
+          }
+        }
+      });
     });
   </script>
   </head>
