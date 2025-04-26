@@ -43,61 +43,61 @@
         color: white;
       }
     </style>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const repoName = window.location.pathname.split('/')[1];
-    const origin = window.location.origin;
-    const basePath = repoName ? `${origin}/${repoName}` : origin;
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const repoName = window.location.pathname.split('/')[1];
+        const origin = window.location.origin;
+        const basePath = repoName ? `${origin}/${repoName}` : origin;
 
-    const navLinks = document.querySelectorAll('.navbar-nav .nav-link[href]');
-    navLinks.forEach(link => {
-      const href = link.getAttribute('href');
-      if (!href.startsWith('http')) {
-        if (href === 'index.html') {
-          link.href = basePath + '/index.html';
-        } else {
-          link.href = basePath + '/' + href;
+        const navLinks = document.querySelectorAll('.navbar-nav .nav-link[href]');
+        navLinks.forEach(link => {
+          const href = link.getAttribute('href');
+          if (!href.startsWith('http')) {
+            if (href === 'index.html') {
+              link.href = basePath + '/index.html';
+            } else {
+              link.href = basePath + '/' + href;
+            }
+          }
+        });
+    
+        const backHomeLink = document.querySelector('.back-home');
+        if (backHomeLink) {
+          backHomeLink.href = basePath + '/index.html';
         }
-      }
-    });
 
-    const backHomeLink = document.querySelector('.back-home');
-    if (backHomeLink) {
-      backHomeLink.href = basePath + '/index.html';
-    }
+        const footerLinks = document.querySelectorAll('.footer-links a[href]');
+        footerLinks.forEach(link => {
+          const href = link.getAttribute('href');
+          if (!href.startsWith('http')) {
+            if (href === 'index.html') {
+              link.href = basePath + '/index.html';
+            } else {
+              link.href = basePath + '/' + href;
+            }
+          }
+        });
 
-    const footerLinks = document.querySelectorAll('.footer-links a[href]');
-    footerLinks.forEach(link => {
-      const href = link.getAttribute('href');
-      if (!href.startsWith('http')) {
-        if (href === 'index.html') {
-          link.href = basePath + '/index.html';
-        } else {
-          link.href = basePath + '/' + href;
+        const style = document.createElement('link');
+        style.rel = 'stylesheet';
+        style.href = basePath + '/main/style.css';
+        document.head.appendChild(style);
+
+        const script = document.createElement('script');
+        script.src = basePath + '/main/main.js';
+        document.body.appendChild(script);
+
+        const faviconLink = document.querySelector('link[rel="shortcut icon"]');
+        if (faviconLink) {
+          faviconLink.href = basePath + '/media/images/logo.png';
         }
-      }
-    });
 
-    const style = document.createElement('link');
-    style.rel = 'stylesheet';
-    style.href = basePath + '/main/style.css';
-    document.head.appendChild(style);
-
-    const script = document.createElement('script');
-    script.src = basePath + '/main/main.js';
-    document.body.appendChild(script);
-
-    const faviconLink = document.querySelector('link[rel="shortcut icon"]');
-    if (faviconLink) {
-      faviconLink.href = basePath + '/media/images/logo.png';
-    }
-
-    const navbarLogo = document.querySelector('.navbar-brand img');
-    if (navbarLogo) {
-      navbarLogo.src = basePath + '/media/images/logo.png';
-    }
-  });
-</script>
+        const navbarLogo = document.querySelector('.navbar-brand img');
+        if (navbarLogo) {
+          navbarLogo.src = basePath + '/media/images/logo.png';
+        }
+      });
+    </script>
   </head>
   <body>
   <header>
