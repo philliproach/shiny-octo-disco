@@ -26,7 +26,6 @@ const websiteContent = {
         },
     }
 };
-   "ending": "ignore this"
 };
 document.addEventListener("DOMContentLoaded", function() {
     for (const id in websiteContent) {
