@@ -7,26 +7,49 @@ const websiteContent = {
     "company-footer-about": "About the company / business for footer",
     "copyright-year": "2025",
     "copyright-company-name": "Company Name",
-    "facebook-link": "https://facebook.com/acmecorp",
-    "twitter-link": "https://twitter.com/acmecorp",
-    "instagram-link": "https://instagram.com/acmecorp",
-
+    
 //INDEX
    "index-tagline": "INDEX PAGE",
 
-
-
+//SOCIAL
+    "social-links": {
+        "facebook-link": {
+            url: "https://facebook.com/",
+            icon: "bi bi-facebook"
+        },
+        "twitter-link": {
+            url: "https://twitter.com/",
+            icon: "bi bi-twitter-x"
+        },
+        "instagram-link": {
+            url: "https://instagram.com/",
+            icon: "bi bi-instagram"
+        },
+    }
+};
    "ending": "ignore this"
 };
 
 document.addEventListener("DOMContentLoaded", function() {
     for (const id in websiteContent) {
+        if (id === "social-links") continue;
+        
         const element = document.getElementById(id);
         if (element) {
-            if (id.endsWith("-link") && element.tagName === "A") {
-                element.href = websiteContent[id];
-            } else {
-                element.textContent = websiteContent[id];
+            element.textContent = websiteContent[id];
+        }
+    }
+    
+    const socialLinks = websiteContent["social-links"];
+    for (const linkId in socialLinks) {
+        const linkElement = document.getElementById(linkId);
+        if (linkElement) {
+            linkElement.href = socialLinks[linkId].url;
+        
+            const iconElement = linkElement.querySelector("i");
+            if (iconElement) {
+                iconElement.className = "";
+                iconElement.className = socialLinks[linkId].icon;
             }
         }
     }
