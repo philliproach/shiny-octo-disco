@@ -24,9 +24,8 @@ const websiteContent = {
             url: "https://instagram.com/",
             icon: "bi bi-instagram"
         },
-    }
-};
-   "ending": "ignore this"
+    },
+    "ending": "ignore this"
 };
 document.addEventListener("DOMContentLoaded", function() {
     for (const id in websiteContent) {
