@@ -9,8 +9,8 @@ const websiteContent = {
     "copyright-company-name": "Company Name",
     
 //INDEX
-   "index-tagline": "INDEX PAGE",
-
+    "index-tagline": "INDEX PAGE",
+    
 //SOCIAL
     "social-links": {
         "facebook-link": {
@@ -24,19 +24,28 @@ const websiteContent = {
         "instagram-link": {
             url: "https://instagram.com/",
             icon: "bi bi-instagram"
-        },
+        }
     }
+        
+    "ending": "IGNORE THIS"
 };
-   "ending": "ignore this"
-};
-
 document.addEventListener("DOMContentLoaded", function() {
     for (const id in websiteContent) {
         if (id === "social-links") continue;
         
         const element = document.getElementById(id);
         if (element) {
-            element.textContent = websiteContent[id];
+            // Special handling for company-name which contains an image
+            if (id === "company-name") {
+                const nodes = element.childNodes;
+                for (let i = 0; i < nodes.length; i++) {
+                    if (nodes[i].nodeType === 3)
+                        nodes[i].nodeValue = websiteContent[id];
+                    }
+                }
+            } else {
+                element.textContent = websiteContent[id];
+            }
         }
     }
     
@@ -45,10 +54,9 @@ document.addEventListener("DOMContentLoaded", function() {
         const linkElement = document.getElementById(linkId);
         if (linkElement) {
             linkElement.href = socialLinks[linkId].url;
-        
+            
             const iconElement = linkElement.querySelector("i");
             if (iconElement) {
-                iconElement.className = "";
                 iconElement.className = socialLinks[linkId].icon;
             }
         }
