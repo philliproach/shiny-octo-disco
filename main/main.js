@@ -26,8 +26,6 @@ const websiteContent = {
             icon: "bi bi-instagram"
         }
     }
-        
-    "ending": "IGNORE THIS"
 };
 document.addEventListener("DOMContentLoaded", function() {
     for (const id in websiteContent) {
