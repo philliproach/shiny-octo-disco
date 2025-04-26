@@ -44,20 +44,21 @@
         color: white;
       }
     </style>
-    <script>
-      const pathPrefix = window.location.origin;
-      const head = document.head;
+  <script>
+    const pathPrefix = window.location.origin + (window.location.pathname.split('/')[1] ? '/' + window.location.pathname.split('/')[1] : '');
 
-      const style = document.createElement('link');
-      style.rel = 'stylesheet';
-      style.href = pathPrefix + '/main/style.css';
-      head.appendChild(style);
+    const head = document.head;
 
-      const script = document.createElement('script');
-      script.src = pathPrefix + '/main/script.js';
-      document.addEventListener('DOMContentLoaded', () => {
+    const style = document.createElement('link');
+    style.rel = 'stylesheet';
+    style.href = pathPrefix + '/main/style.css';
+    head.appendChild(style);
+
+    const script = document.createElement('script');
+    script.src = pathPrefix + '/main/script.js';
+    document.addEventListener('DOMContentLoaded', () => {
       document.body.appendChild(script);
-      });
+    });
   </script>
   </head>
   <body>
