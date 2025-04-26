@@ -1,3 +1,6 @@
+/* Custom CSS for Sealcoating Website */
+
+/* Color Variables */
 :root {
   --primary-color: #0e2240;
   --secondary-color: #d9a521;
@@ -6,9 +9,18 @@
   --dark-gray: #343a40;
 }
 
+/* Global Styles */
 body {
   font-family: 'Roboto', sans-serif;
   color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  padding: 2rem 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -37,6 +49,7 @@ h1, h2, h3, h4, h5, h6 {
   transform: translateX(-50%);
 }
 
+/* Button Styles */
 .btn-primary {
   background-color: var(--secondary-color);
   border-color: var(--secondary-color);
@@ -58,18 +71,25 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff;
 }
 
+/* Navbar Customization */
 .navbar-dark {
-  background-color: var(--primary-color) !important;
+  background-color: #212529 !important;
+}
+
+.navbar-brand img {
+  height: 40px;
 }
 
 .nav-link {
   font-weight: 500;
+  color: white;
 }
 
 .nav-link:hover {
   color: var(--secondary-color) !important;
 }
 
+/* Hero Section */
 .hero-section {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/api/placeholder/1200/600') center/cover no-repeat;
   color: white;
@@ -93,6 +113,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
 }
 
+/* Services Section */
 .service-card {
   background-color: #fff;
   border-radius: 8px;
@@ -133,6 +154,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5rem;
 }
 
+/* Why Choose Us Section */
 .why-us-section {
   background-color: var(--light-gray);
 }
@@ -163,6 +185,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.25rem;
 }
 
+/* CTA Section */
 .cta-section {
   background: linear-gradient(rgba(14, 34, 64, 0.9), rgba(14, 34, 64, 0.9)), url('/api/placeholder/1200/400') center/cover no-repeat;
   color: white;
@@ -180,28 +203,50 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0 auto 1.5rem;
 }
 
+/* Footer Customization - Restored to Original */
 .footer {
-  background-color: var(--primary-color);
+  background-color: #212529;
+  color: #fff;
+  padding: 2rem 0;
 }
 
 .footer h5 {
-  color: var(--secondary-color);
-  border-bottom: 2px solid var(--secondary-color);
-  padding-bottom: 10px;
+  color: #fff;
+  text-transform: uppercase;
   margin-bottom: 20px;
+}
+
+.footer a.text-white {
+  color: #fff !important;
+  text-decoration: none;
+}
+
+.footer a.text-white:hover {
+  color: var(--secondary-color) !important;
+  text-decoration: underline;
 }
 
 .social-icons a {
   color: #fff;
   font-size: 1.5rem;
   margin-right: 1rem;
-  transition: color 0.3s ease;
 }
 
 .social-icons a:hover {
   color: var(--secondary-color);
 }
 
+/* List styling in footer */
+.footer ul.list-unstyled li {
+  margin-bottom: 0.5rem;
+}
+
+.footer hr.bg-light {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  opacity: 1;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
   .hero-content h1 {
     font-size: 2.5rem;
