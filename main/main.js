@@ -16,6 +16,7 @@ const websiteContent = {
 
 
 
+   "ending": "ignore this"
 };
 
 document.addEventListener("DOMContentLoaded", function() {
