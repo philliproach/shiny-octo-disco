@@ -112,6 +112,12 @@ margin-right: 1rem;
   border-color: #f08a62;
 }
 
+.btn-primary:hover {
+    color: #fff;
+    background-color: #b15029;
+    border-color: #000000;
+}
+
 .btn-outline-light {
   color: #f8f9fa;
   border-color: #f8f9fa;
