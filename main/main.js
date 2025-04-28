@@ -7,6 +7,7 @@ const websiteContent = {
     "company-footer-about": "About the company / business for footer",
     "copyright-year": "2025",
     "copyright-company-name": "Company Name",
+    "company-age": "5", 
 
 //INDEX
    "index-tagline": "INDEX PAGE",
