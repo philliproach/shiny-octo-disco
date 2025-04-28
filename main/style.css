@@ -109,10 +109,10 @@ margin-right: 1rem;
 .btn-primary {
     --bs-btn-color: #fff;
     --bs-btn-bg: #ee8860;
-    --bs-btn-border-color: 000000;
+    --bs-btn-border-color: #000000;
     --bs-btn-hover-color: #fff;
     --bs-btn-hover-bg: #b15029;
-
+}
 
 .btn-outline-light {
   color: #f8f9fa;
