@@ -12,14 +12,16 @@ main {
   height: 40px;
 }
 .footer {
-  background-color: #212529;
+  background-color: 
+  
+#212529;
   color: #fff;
   padding: 2rem 0;
 }
 .social-icons a {
-  color: #fff;
-  font-size: 1.5rem;
-  margin-right: 1rem;
+color: #fff;
+font-size: 1.5rem;
+margin-right: 1rem;
 }
 .container {
   max-width: 1200px;
@@ -105,15 +107,11 @@ main {
 }
 
 .btn-primary {
-  color: #fff !important;
-  background-color: #ee8860 !important;
-  border-color: #000000 !important;
-}
-
-.btn-primary:hover {
-  color: #fff !important;
-  background-color: #b15029 !important;
-  border-color: #000000 !important;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #ee8860;
+    --bs-btn-border-color: #000000;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #b15029;
 }
 
 .btn-outline-light {
