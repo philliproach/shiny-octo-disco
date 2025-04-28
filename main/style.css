@@ -233,39 +233,6 @@ margin-right: 1rem;
   margin-bottom: 0.5rem;
 }
 
-/* Testimonials Section */
-.testimonials-section {
-  background-color: #f8f9fa;
-}
-
-.testimonial-card {
-  background-color: #fff;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  height: 100%;
-}
-
-.testimonial-content {
-  font-style: italic;
-  margin-bottom: 20px;
-}
-
-.testimonial-content p {
-  position: relative;
-  padding-left: 25px;
-}
-
-.testimonial-author h5 {
-  font-size: 1.1rem;
-  margin-bottom: 0.2rem;
-}
-
-.testimonial-author p {
-  color: #666;
-  margin: 0;
-}
-
 .cta-section {
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../media/images/banner-top.png') no-repeat center center;
   background-size: cover;
