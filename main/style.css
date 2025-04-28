@@ -131,7 +131,7 @@ margin-right: 1rem;
 }
 
 .hero-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../media/images/logo.png') no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://placehold.co/1200x400/orange/white') no-repeat center center;
   background-size: cover;
   color: #fff;
   padding: 100px 0;
@@ -267,7 +267,7 @@ margin-right: 1rem;
 }
 
 .cta-section {
-  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('../media/images/logo.png') no-repeat center center;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('https://placehold.co/1200x400/orange/white') no-repeat center center;
   background-size: cover;
   color: #fff;
 }
