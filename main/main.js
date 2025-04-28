@@ -7,7 +7,6 @@ const websiteContent = {
     "company-footer-about": "About the company / business for footer",
     "copyright-year": "2025",
     "copyright-company-name": "Company Name",
-    "company-age": "5", 
 
 //INDEX
    "index-tagline": "INDEX PAGE",
@@ -39,7 +38,7 @@ const websiteContent = {
     "service3desc": "Enhance safety and organization with fresh, bright parking lot striping and pavement markings.",
     //---why choose us---
     "wcu1": "Experience",
-    "wcu1desc": "Over 15 years of industry experience with thousands of satisfied customers.",
+    "wcu1desc": "Over 5 years of industry experience with hundreds of satisfied customers.",
     "wcu2": "Quality Materials",
     "wcu2desc": "We use only premium commercial-grade sealants and materials.",
     "wcu3": "Professional Team",
