@@ -108,8 +108,8 @@ margin-right: 1rem;
 
 .btn-primary {
   color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  background-color: #ee8860;
+  border-color: #ee8860;
 }
 
 .btn-outline-light {
@@ -119,8 +119,8 @@ margin-right: 1rem;
 }
 
 .btn-outline-primary {
-  color: #007bff;
-  border-color: #007bff;
+  color: #ee8860;
+  border-color: #ee8860;
   background-color: transparent;
 }
 
@@ -173,7 +173,7 @@ margin-right: 1rem;
 .service-icon {
   font-size: 3rem;
   margin-bottom: 1.5rem;
-  color: #007bff;
+  color: #ee8860;
 }
 
 .service-card h3 {
@@ -196,7 +196,7 @@ margin-right: 1rem;
 
 .feature-icon {
   font-size: 2.5rem;
-  color: #007bff;
+  color: #ee8860;
   margin-bottom: 1rem;
 }
 
@@ -225,39 +225,6 @@ margin-right: 1rem;
 .project-info h4 {
   font-size: 1.2rem;
   margin-bottom: 0.5rem;
-}
-
-/* Testimonials Section */
-.testimonials-section {
-  background-color: #f8f9fa;
-}
-
-.testimonial-card {
-  background-color: #fff;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  height: 100%;
-}
-
-.testimonial-content {
-  font-style: italic;
-  margin-bottom: 20px;
-}
-
-.testimonial-content p {
-  position: relative;
-  padding-left: 25px;
-}
-
-.testimonial-author h5 {
-  font-size: 1.1rem;
-  margin-bottom: 0.2rem;
-}
-
-.testimonial-author p {
-  color: #666;
-  margin: 0;
 }
 
 .cta-section {
