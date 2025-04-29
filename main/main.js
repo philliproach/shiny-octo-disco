@@ -1,52 +1,15 @@
 const websiteContent = {
 //GENERAL
-    "company-name": "Company Name",
+        //CONTACT
     "owner-name": "John Doe",
     "company-phone": "(123) 456-7890",
     "company-email": "example@example.com",
+        //COMPANY INFO
+    "company-name": "Company Name",
+    "copyright-company-name": "Company Name",
     "company-footer-about": "About the company / business for footer",
     "copyright-year": "2025",
-    "copyright-company-name": "Company Name",
-
-//INDEX
-   "index-tagline": "INDEX PAGE",
-
-//ABOUT
-   "about-tagline": "ABOUT PAGE",
-
-//CONTACT
-   "contact-tagline": "CONTACT PAGE",
-
-//PRIVACY-POLICY
-   "privacy-policy-tagline": "PRIVACY POLICY PAGE",
-
-//TERMS-OF-SERVICE
-   "terms-of-service-tagline": "TERMS OF SERVICE PAGE",
-    
-//TEMPLATE
-    "template-tagline": "TEMPLATE",
-    "large-header": "Professional Sealcoating Services",
-    "large-subheader": "Protect your investment with premium asphalt maintenance solutions.",
-    "bottom-large-header": "Ready to Protect Your Asphalt Investment?",
-    "bottom-large-subheader": "Contact us today for a free assessment and quote on your sealcoating project.",
-    //---services---
-    "service1": "Asphalt Sealcoating",
-    "service1desc": "Protect your pavement from weather damage, UV rays, and chemicals with our premium coal tar or asphalt-based sealants.",
-    "service2": "Crack Filling",
-    "service2desc": "Prevent water penetration and further damage with our professional crack sealing and filling services.",
-    "service3": "Line Striping",
-    "service3desc": "Enhance safety and organization with fresh, bright parking lot striping and pavement markings.",
-    //---why choose us---
-    "wcu1": "Experience",
-    "wcu1desc": "Over 5 years of industry experience with hundreds of satisfied customers.",
-    "wcu2": "Quality Materials",
-    "wcu2desc": "We use only premium commercial-grade sealants and materials.",
-    "wcu3": "Professional Team",
-    "wcu3desc": "Trained, insured, and experienced technicians for every job.",
-    "wcu4": "Timely Service",
-    "wcu4desc": "On-time project completion with minimal disruption to your business.",
-
-//SOCIAL
+        //SOCIAL LINKS
     "social-links": {
         "facebook-link": {
             url: "https://facebook.com/",
@@ -61,7 +24,42 @@ const websiteContent = {
             icon: "bi bi-instagram"
         },
     },
-    "ending": "ending"
+
+//ABOUT
+   "about-tagline": "ABOUT PAGE",
+
+//CONTACT
+   "contact-tagline": "CONTACT PAGE",
+    
+//INDEX
+        //PAGE INFO
+    "index-tagline": "INDEX PAGE",
+    "large-header": "Professional Sealcoating Services",
+    "large-subheader": "Protect your investment with premium asphalt maintenance solutions.",
+    "bottom-large-header": "Ready to Protect Your Asphalt Investment?",
+    "bottom-large-subheader": "Contact us today for a free assessment and quote on your sealcoating project.",
+        //---services---
+    "service1": "Asphalt Sealcoating",
+    "service1desc": "Protect your pavement from weather damage, UV rays, and chemicals with our premium coal tar or asphalt-based sealants.",
+    "service2": "Crack Filling",
+    "service2desc": "Prevent water penetration and further damage with our professional crack sealing and filling services.",
+    "service3": "Line Striping",
+    "service3desc": "Enhance safety and organization with fresh, bright parking lot striping and pavement markings.",
+        //---why choose us---
+    "wcu1": "Experience",
+    "wcu1desc": "Over 5 years of industry experience with hundreds of satisfied customers.",
+    "wcu2": "Quality Materials",
+    "wcu2desc": "We use only premium commercial-grade sealants and materials.",
+    "wcu3": "Professional Team",
+    "wcu3desc": "Trained, insured, and experienced technicians for every job.",
+    "wcu4": "Timely Service",
+    "wcu4desc": "On-time project completion with minimal disruption to your business.",
+
+
+
+
+    
+    "ending": "IGNORE THIS"
 };
 
 
