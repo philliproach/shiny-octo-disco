@@ -58,13 +58,9 @@ const websiteContent = {
 
 
 
-    
+        
     "ending": "IGNORE THIS"
 };
-
-
-
-
 document.addEventListener("DOMContentLoaded", function() {
     for (const id in websiteContent) {
         if (id === "social-links") continue;
