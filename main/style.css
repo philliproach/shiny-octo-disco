@@ -1,3 +1,4 @@
+/*USES BS5*/
 body {
   display: flex;
   flex-direction: column;
@@ -284,6 +285,9 @@ margin-right: 1rem;
     flex: 0 0 66.666667%;
     max-width: 66.666667%;
   }
+}
+.bg-primary {
+    background-color: #826f9b;
 }
 
 .center {
