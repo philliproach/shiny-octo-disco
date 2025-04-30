@@ -287,7 +287,7 @@ margin-right: 1rem;
   }
 }
 .about-header-color {
-    background-color: #826f9b;
+    background-color: #826f9b !important;
 }
 
 .center {
