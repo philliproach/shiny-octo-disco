@@ -25,8 +25,13 @@ const websiteContent = {
         },
     },
 
+        //INDEX AND ABOUT
+   "bottom-large-header": "Ready to Protect Your Asphalt Investment?",
+   "bottom-large-subheader": "Contact us today for a free assessment and quote on your sealcoating project.",
+  
 //ABOUT
    "about-tagline": "ABOUT PAGE",
+   "about-the-business": "Paragraph about the business goes here.",
 
 //CONTACT
    "contact-tagline": "CONTACT PAGE",
@@ -36,8 +41,7 @@ const websiteContent = {
     "index-tagline": "INDEX PAGE",
     "large-header": "Professional Sealcoating Services",
     "large-subheader": "Protect your investment with premium asphalt maintenance solutions.",
-    "bottom-large-header": "Ready to Protect Your Asphalt Investment?",
-    "bottom-large-subheader": "Contact us today for a free assessment and quote on your sealcoating project.",
+
         //---services---
     "service1": "Asphalt Sealcoating",
     "service1desc": "Protect your pavement from weather damage, UV rays, and chemicals with our premium coal tar or asphalt-based sealants.",
