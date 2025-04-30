@@ -24,7 +24,6 @@ const websiteContent = {
             icon: "bi bi-instagram"
         },
     },
-
         //INDEX AND ABOUT
    "bottom-large-header": "Ready to Protect Your Asphalt Investment?",
    "bottom-large-subheader": "Contact us today for a free assessment and quote on your sealcoating project.",
@@ -32,6 +31,8 @@ const websiteContent = {
 //ABOUT
    "about-tagline": "ABOUT PAGE",
    "about-the-business": "Paragraph about the business goes here.",
+   "about-top-header": "Professional sealcoating services with over 15 years of experience in the industry.",
+   "about-top-subheader": "We are dedicated to providing high-quality asphalt maintenance solutions that extend the life of your pavement and enhance your property's appearance and value.",
 
 //CONTACT
    "contact-tagline": "CONTACT PAGE",
