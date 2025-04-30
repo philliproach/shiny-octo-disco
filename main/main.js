@@ -35,7 +35,10 @@ const websiteContent = {
    "about-top-subheader": "We are dedicated to providing high-quality asphalt maintenance solutions that extend the life of your pavement and enhance your property's appearance and value.",
 
 //CONTACT
-   "contact-tagline": "CONTACT PAGE",
+    "contact-tagline": "CONTACT PAGE",
+    "contact-owner-name": "John Doe",
+    "contact-company-phone": "(123) 456-7890",
+    "contact-company-email": "example@example.com",
     
 //INDEX
         //PAGE INFO
