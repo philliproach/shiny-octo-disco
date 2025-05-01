@@ -72,6 +72,9 @@
             </div>
             
             <form action="https://formspree.io/f/mdkgaqgd" method="POST" id="contact-form" class="needs-validation" novalidate>
+              <!-- Hidden field to help with spam detection -->
+              <input type="hidden" name="_subject" value="New Contact Form Submission">
+              
               <div class="row g-3">
                 <div class="col-md-6">
                   <div class="form-floating mb-3">
@@ -84,7 +87,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="form-floating mb-3">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                    <input type="email" class="form-control" id="email" name="_replyto" placeholder="Your Email" required>
                     <label for="email">Your Email</label>
                     <div class="invalid-feedback">
                       Please provide a valid email address.
@@ -109,19 +112,19 @@
                     </div>
                   </div>
                 </div>
+                
+                <!-- Anti-spam honeypot field -->
+                <div style="display: none;">
+                  <input type="text" name="_gotcha">
+                </div>
+                
+                <!-- Success page redirect -->
+                <input type="hidden" name="_next" value="thankyou.html">
+                
                 <div class="col-12">
                   <div class="d-grid">
                     <button type="submit" class="btn btn-primary btn-lg">Submit Message</button>
                   </div>
-                </div>
-              </div>
-              
-              <div class="form-response mt-3">
-                <div id="form-success" class="alert alert-success d-none" role="alert">
-                  Thank you! Your message has been sent successfully.
-                </div>
-                <div id="form-error" class="alert alert-danger d-none" role="alert">
-                  Oops! There was a problem sending your message. Please try again.
                 </div>
               </div>
             </form>
@@ -132,7 +135,7 @@
   </div>
 </section>
 
-<!-- Add this script to handle form validation and submission -->
+<!-- Simplified script to handle form validation only -->
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   // Form validation
@@ -146,51 +149,8 @@ document.addEventListener('DOMContentLoaded', function() {
       }
       
       form.classList.add('was-validated');
+      // Let Formspree handle the actual submission
     });
-    
-    // Handle form submission with Formspree
-    const formSuccess = document.getElementById('form-success');
-    const formError = document.getElementById('form-error');
-    
-    if (formSuccess && formError) {
-      form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const formData = new FormData(form);
-        
-        fetch('https://formspree.io/f/mdkgaqgd', {
-          method: 'POST',
-          body: formData,
-          headers: {
-            'Accept': 'application/json'
-          }
-        })
-        .then(response => {
-          if (response.ok) {
-            form.reset();
-            form.classList.remove('was-validated');
-            formSuccess.classList.remove('d-none');
-            formError.classList.add('d-none');
-            
-            // Hide success message after 5 seconds
-            setTimeout(() => {
-              formSuccess.classList.add('d-none');
-            }, 5000);
-          } else {
-            throw new Error('Form submission failed');
-          }
-        })
-        .catch(error => {
-          formError.classList.remove('d-none');
-          formSuccess.classList.add('d-none');
-          
-          // Hide error message after 5 seconds
-          setTimeout(() => {
-            formError.classList.add('d-none');
-          }, 5000);
-        });
-      });
-    }
   }
 });
 </script>
