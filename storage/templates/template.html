@@ -147,7 +147,24 @@
     </div>
   </div>
 </section>
-    
+<script>
+    (function() {
+      'use strict';
+      
+      var forms = document.querySelectorAll('.needs-validation');
+      
+      Array.prototype.slice.call(forms).forEach(function(form) {
+        form.addEventListener('submit', function(event) {
+          if (!form.checkValidity()) {
+            event.preventDefault();
+            event.stopPropagation();
+          }
+          
+          form.classList.add('was-validated');
+        }, false);
+      });
+    })();
+  </script>
 
 
 
@@ -184,7 +201,6 @@
         </div>
       </div>
       <hr class="my-4 bg-light">
-
     <div class="row">
       <div class="col-md-6 text-center text-md-start">
         <p class="mb-0">© <a id="copyright-year">Loading...</a> <a id="copyright-company-name">Loading...</a>. All rights reserved.</p><br>
