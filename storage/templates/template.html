@@ -60,8 +60,177 @@
     
 
 <section class="contact-form-section py-5 bg-light">
-
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-lg-8">
+        <div class="card border-0 shadow-sm">
+          <div class="card-body p-4 p-md-5">
+            <div class="text-center mb-4">
+              <h2>Get In Touch</h2>
+              <p class="text-muted">We'd love to hear from you. Fill out the form below and we'll get back to you as soon as possible.</p>
+              <hr class="mx-auto" style="width: 50px; height: 3px; background-color: var(--bs-primary);">
+            </div>
+            
+            <form action="https://formspree.io/f/mdkgaqgd" method="POST" id="contact-form" class="needs-validation" novalidate>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                    <label for="name">Your Name</label>
+                    <div class="invalid-feedback">
+                      Please provide your name.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                    <label for="email">Your Email</label>
+                    <div class="invalid-feedback">
+                      Please provide a valid email address.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                    <label for="subject">Subject</label>
+                    <div class="invalid-feedback">
+                      Please provide a subject.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-floating mb-3">
+                    <textarea class="form-control" id="message" name="message" placeholder="Your Message" style="height: 150px" required></textarea>
+                    <label for="message">Your Message</label>
+                    <div class="invalid-feedback">
+                      Please provide your message.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="d-grid">
+                    <button type="submit" class="btn btn-primary btn-lg">Submit Message</button>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-response mt-3">
+                <div id="form-success" class="alert alert-success d-none" role="alert">
+                  Thank you! Your message has been sent successfully.
+                </div>
+                <div id="form-error" class="alert alert-danger d-none" role="alert">
+                  Oops! There was a problem sending your message. Please try again.
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
+
+<!-- Add this script to handle form validation and submission -->
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Form validation
+  const form = document.getElementById('contact-form');
+  
+  if (form) {
+    form.addEventListener('submit', function(event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      
+      form.classList.add('was-validated');
+    });
+    
+    // Handle form submission with Formspree
+    const formSuccess = document.getElementById('form-success');
+    const formError = document.getElementById('form-error');
+    
+    if (formSuccess && formError) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        
+        const formData = new FormData(form);
+        
+        fetch('https://formspree.io/f/mdkgaqgd', {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        })
+        .then(response => {
+          if (response.ok) {
+            form.reset();
+            form.classList.remove('was-validated');
+            formSuccess.classList.remove('d-none');
+            formError.classList.add('d-none');
+            
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+              formSuccess.classList.add('d-none');
+            }, 5000);
+          } else {
+            throw new Error('Form submission failed');
+          }
+        })
+        .catch(error => {
+          formError.classList.remove('d-none');
+          formSuccess.classList.add('d-none');
+          
+          // Hide error message after 5 seconds
+          setTimeout(() => {
+            formError.classList.add('d-none');
+          }, 5000);
+        });
+      });
+    }
+  }
+});
+</script>
+
+<!-- Add some custom styles for the form -->
+<style>
+  .contact-form-section .card {
+    transition: transform 0.3s ease;
+  }
+  
+  .contact-form-section .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .contact-form-section .form-control:focus {
+    border-color: var(--bs-primary);
+    box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+  }
+  
+  .contact-form-section .btn-primary {
+    padding: 12px 24px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-form-section .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-floating label {
+    color: #6c757d;
+  }
+  
+  .alert {
+    border-radius: 8px;
+    font-weight: 500;
+  }
+</style>
 
     
 <section class="contact-info-section py-5 bg-light">
