@@ -60,31 +60,27 @@
     
 
 <section class="contact-form-section py-5 bg-light">
-<section class="contact-form-section py-5 bg-light">
     <div class="container">
         <h2 class="section-title text-center mb-4">Want to buy a collar? Contact me!</h2>
         <div class="row justify-content-center">
             <div class="col-lg-8">
                 <div class="card border-0 shadow-sm">
                     <div class="card-body p-4">
-                        <!-- Standard Formspree form with default redirect -->
+                        <!-- Clean Formspree form with no JavaScript -->
                         <form action="https://formspree.io/f/mdkgaqgd" method="POST">
-                            <!-- Add hidden fields for redirect -->
-                            <input type="hidden" name="_next" value="https://philliproach.github.io/shiny-octo-disco/thank-you.html">
-                            
-                            <div class="form-group mb-3">
+                            <div class="mb-3">
                                 <label for="name" class="form-label">Your Name</label>
-                                <input type="text" id="name" name="name" class="form-control" required>
+                                <input type="text" class="form-control" id="name" name="name" required>
                             </div>
                             
-                            <div class="form-group mb-3">
+                            <div class="mb-3">
                                 <label for="email" class="form-label">Email Address</label>
-                                <input type="email" id="email" name="email" class="form-control" required>
+                                <input type="email" class="form-control" id="email" name="email" required>
                             </div>
                             
-                            <div class="form-group mb-4">
+                            <div class="mb-3">
                                 <label for="message" class="form-label">Message</label>
-                                <textarea id="message" name="message" class="form-control" rows="5" required></textarea>
+                                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                             </div>
                             
                             <div class="d-grid">
@@ -97,7 +93,6 @@
         </div>
     </div>
 </section>
-  </section>
 
     
 <section class="contact-info-section py-5 bg-light">
@@ -146,26 +141,8 @@
     </div>
   </div>
 </section>
-<script>
-    (function() {
-      'use strict';
-      
-      var forms = document.querySelectorAll('.needs-validation');
-      
-      Array.prototype.slice.call(forms).forEach(function(form) {
-        form.addEventListener('submit', function(event) {
-          if (!form.checkValidity()) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          
-          form.classList.add('was-validated');
-        }, false);
-      });
-    })();
-  </script>
 
-
+    
 
     
 
