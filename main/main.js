@@ -48,7 +48,7 @@ const websiteContent = {
 
         //---services---
     "service1": "Service 1",
-    "service1desc": "About service 1,
+    "service1desc": "About service 1",
     "service2": "Service 2",
     "service2desc": "About service 2",
     "service3": "Service 3",
