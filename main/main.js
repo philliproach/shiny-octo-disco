@@ -5,7 +5,7 @@ const websiteContent = {
     "company-phone": "(123) 456-7890",
     "company-email": "example@example.com",
         //COMPANY INFO
-    "company-name": "Company Name",
+    "company-name": "TEMPLATE",
     "copyright-company-name": "Company Name",
     "company-footer-about": "About the company / business for footer",
     "copyright-year": "2025",
@@ -25,14 +25,14 @@ const websiteContent = {
         },
     },
         //INDEX AND ABOUT
-   "bottom-large-header": "Ready to Protect Your Asphalt Investment?",
-   "bottom-large-subheader": "Contact us today for a free assessment and quote on your sealcoating project.",
+   "bottom-large-header": "Hero Section Header",
+   "bottom-large-subheader": "Hero Section Subheader",
   
 //ABOUT
    "about-tagline": "ABOUT PAGE",
    "about-the-business": "Paragraph about the business goes here.",
-   "about-top-header": "Professional sealcoating services with over 15 years of experience in the industry.",
-   "about-top-subheader": "We are dedicated to providing high-quality asphalt maintenance solutions that extend the life of your pavement and enhance your property's appearance and value.",
+   "about-top-header": "Professional website designer and builder.",
+   "about-top-subheader": "We are dedicated to providing high-quality websites.",
 
 //CONTACT
     "contact-tagline": "CONTACT PAGE",
@@ -43,25 +43,25 @@ const websiteContent = {
 //INDEX
         //PAGE INFO
     "index-tagline": "INDEX PAGE",
-    "large-header": "Professional Sealcoating Services",
-    "large-subheader": "Protect your investment with premium asphalt maintenance solutions.",
+    "large-header": "Professional Website Builders",
+    "large-subheader": "Enhance your business with a sleek website design.",
 
         //---services---
-    "service1": "Asphalt Sealcoating",
-    "service1desc": "Protect your pavement from weather damage, UV rays, and chemicals with our premium coal tar or asphalt-based sealants.",
-    "service2": "Crack Filling",
-    "service2desc": "Prevent water penetration and further damage with our professional crack sealing and filling services.",
-    "service3": "Line Striping",
-    "service3desc": "Enhance safety and organization with fresh, bright parking lot striping and pavement markings.",
+    "service1": "Service 1",
+    "service1desc": "About service 1,
+    "service2": "Service 2",
+    "service2desc": "About service 2",
+    "service3": "Service 3",
+    "service3desc": "About service 3",
         //---why choose us---
     "wcu1": "Experience",
-    "wcu1desc": "Over 5 years of industry experience with hundreds of satisfied customers.",
-    "wcu2": "Quality Materials",
-    "wcu2desc": "We use only premium commercial-grade sealants and materials.",
-    "wcu3": "Professional Team",
-    "wcu3desc": "Trained, insured, and experienced technicians for every job.",
+    "wcu1desc": "Over 3 years of experience programming and designing websites.",
+    "wcu2": "Quality Design",
+    "wcu2desc": "Our websites offer sleek designs focusing on easy use and navigation.",
+    "wcu3": "Custom Building",
+    "wcu3desc": "We offer fully custom websites. ",
     "wcu4": "Timely Service",
-    "wcu4desc": "On-time project completion with minimal disruption to your business.",
+    "wcu4desc": "On-time project completion.",
 
 
 
