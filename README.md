@@ -2,7 +2,7 @@
 ### Features
 * Info in <a href="main/main.js">*main/main.js*</a> allows users to easily change info across the website
 * Easy navigation across the website
-* Bootstrap 5.3.2 alloys for easy styling and a cleaner look
+* Bootstrap 5.3.2 allows for easy styling and a cleaner look
 
 ### Consists of
 * Images such as the logo, and banners are located in <a href="media/images">*media/images*</a> and images for the gallery are located in <a href="media/gallery">*media/gallery*</a>
