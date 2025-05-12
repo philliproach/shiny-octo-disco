@@ -7,7 +7,7 @@
 * Images such as the logo, and banners are located in <a href="media/images">*media/images*</a> and images for the gallery are located in <a href="media/gallery">*media/gallery*</a>
 * The website has an <a href="about">*about*</a> page, a <a href="contact">*contact*</a> page, and a <a href="">*landing*</a> page.
 
-### Variables
+### Variables in <a href="main/main.js">*main/main.js*</a>
 
 ```
      "owner-name": "",- - - - - - - - - - - - - Business Owner Name
