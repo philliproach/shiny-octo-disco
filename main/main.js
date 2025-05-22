@@ -1,13 +1,13 @@
 const websiteContent = {
 //GENERAL
         //CONTACT
-    "owner-name": "John Doe",
-    "company-phone": "(123) 456-7890",
-    "company-email": "example@example.com",
+    "owner-name": "Phillip Roach",
+    "company-phone": "(111) 111-1111",
+    "company-email": "philliproach1111@gmail.com",
         //COMPANY INFO
-    "company-name": "TEMPLATE",
-    "copyright-company-name": "Company Name",
-    "company-footer-about": "About the company / business for footer",
+    "company-name": "Website Builder - Phillip Roach",
+    "copyright-company-name": "Website Builder - Phillip Roach",
+    "company-footer-about": "About the company / business for ",
     "copyright-year": "2025",
         //SOCIAL LINKS
     "social-links": {
@@ -30,7 +30,7 @@ const websiteContent = {
   
 //ABOUT
    "about-tagline": "ABOUT PAGE",
-   "about-the-business": "Paragraph about the business goes here.",
+   "about-the-business": "Paragraph about the business.",
    "about-top-header": "Professional website designer and builder.",
    "about-top-subheader": "We are dedicated to providing high-quality websites.",
 
@@ -43,8 +43,8 @@ const websiteContent = {
 //INDEX
         //PAGE INFO
     "index-tagline": "INDEX PAGE",
-    "large-header": "Professional Website Builders",
-    "large-subheader": "Enhance your business with a sleek website design.",
+    "large-header": "Professional Websites",
+    "large-subheader": "Enhance your business with a sleek website by Phillip Roach",
 
         //---services---
     "service1": "Service 1",
